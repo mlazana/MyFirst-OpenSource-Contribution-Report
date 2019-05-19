@@ -18,7 +18,7 @@ Contributing to an open source project has proven to be extremely beneficial. It
 %---
 
 \section*{Introduction}
-The "Software Engineering in Practise" course is one of the most important in my undergraduate degree, since it has prompted me to gain my first serious experience in this field. Under the supervision of the professor Diomidis Spinellis and the help of PhD candidate Antonis Gkortzis I gained useful knowledge in software engineering that helped me produce as much professional code as I could at this time. I learned about software design, construction, testing, maintenance, management and more, following the book of IEEE "SWEBOK, Software Engineering  Body of Knowledge". Last but not least, I gained a better understanding of git that helped me work on the open source project I chose.
+The "Software Engineering in Practise" course is one of the most important in my undergraduate degree, since it has prompted me to gain my first serious experience in this field. Under the supervision of the professor Diomidis Spinellis and the help of PhD candidate Antonis Gkortzis I gained useful knowledge in software engineering that broaden my horizons in this field. I learned about software design, construction, testing, maintenance, management and more, following the book of IEEE "SWEBOK, Software Engineering  Body of Knowledge". Last but not least, I gained valuable experience with version control systems by using git on a daily bases.
 
 \section{Project Understanding}
 
@@ -30,7 +30,7 @@ The "Software Engineering in Practise" course is one of the most important in my
 \end{figure}
 %-----
 
-I had two criteria while searching for a project. The first was high difficulty and the second was to be something that will enthusiasm me. So when I found ArchiveBox I thought that it was a great idea and also when I start reading the code I didn't understand anything. So I was sure that this was going to be a project that will definately help me improve.
+I had two criteria while searching for a project. The first was high difficulty and the second was to be something that will excite me. So when I found ArchiveBox I thought that it was a great idea considering the level of difficulty. So I was sure that this was going to be a challenging project that will definitely help me improve.
 
 ArchiveBox[1] is a very promising and upcoming project created by Nick Sweeting (GitHub: pirate) and has a vision of archiving everything from the internet. It is motivated by the fact that many people find interesting information on the internet that want to store locally, and most importantly, in multiple redundant common formats(HTML, PDF, PNG, WARC etc.). So, the user gives specific terminal commands including the URL that wants to archive, and then all the formats of the archived website are stored and organized in an HTML page.
 
@@ -53,7 +53,7 @@ That was very good for me because I needed to break out of my comfort zone and d
 
 The issue was about creating a blacklist of URLs that shouldn't be archived. For example, when someone wanted to archive automatically his/hers bookmarks, websites that were useless, in terms of page information, were being archived. So when someone wanted to archive his bookmarks he would have also unimportant information, losing at the same time, disk space.
 
-My first step, while dealing with this issue, was to understand which parts of the code were producing the archiving/parsing flow. So, I found the specific files that are involved with this process and start experimenting by changing part of them so that I could understand their usage. My thought was to create a method as a filter in order to check which URLs are the proper ones. 
+My first step, while dealing with this issue, was to understand which parts of the code were producing the archiving/parsing flow. So, I found the specific files that are involved with this process and start experimenting by changing part of them so that I could understand their usage. My thought was to create a method that will function as a filter in order to check which URLs are the proper ones. 
 % Image
 \begin{figure}[tph!]
 \centerline{\includegraphics[totalheight=4.5cm]{filter.jpg}}
@@ -85,7 +85,7 @@ Finally, I had one more challenge. I needed to find the perfect place to call th
 
 \subsection{Code quality}
 
-First of all, in the begging of my contribution process I tried to read as much code as I could in order to understand the best practises. I detected what kind of names they give to their methods and variables, but also the number of empty lines they use between their methods etc. I did that, as I wanted to contribute code that suits the project.
+First of all, in the begging of my contribution process I tried to read as much code as I could in order to understand the best practises. I underlined naming principles that where adopted on the project, but also the number of empty lines they use between their methods etc. By doing this I managed to contribute code that suits the project.
 
 Further more, I wrote descriptive comments to my methods and variables. 
 % Image
@@ -96,21 +96,21 @@ Further more, I wrote descriptive comments to my methods and variables.
 \end{figure}
 %-----
 
-I wrote comments in every method or variable I created, except in the ones that was very obvious what they were doing.
+Every method I wrote was well documented, so as to create reproducible and scaling code.
 
 \subsection{Continuous Integration \& Testing}
-The project has only Docker Cloud (ci/dockercloud)[2], which allowed me to manage the project in a container without exposing it to the rest of my system. Eventually all my commits passed this check.As far as testing is concerned, code responded positively, so my code was merged to the project!
+The project has only Docker Cloud (ci/dockercloud)[2], which allowed me to manage the project in a container without exposing it to the rest of my system. Eventually all my commits passed this check. As far as testing is concerned, code responded positively, so my code was merged to the project!
 
 % Image
 \begin{figure}[tph!]
-\centerline{\includegraphics[totalheight=1.75cm]{merge.jpg}}
+\centerline{\includegraphics[totalheight=1cm]{merge.jpg}}
     \caption{Merge}
     \label{fig:verticalcell}
 \end{figure}
 %-----
 
 \section{Project organization}
-I worked with GitHub in my forked repository. I tried to make small commits at a time in order to be specific in their description. Also GitHub helped me retrieve previous versions when that was needed. Finally when I finished my work I created a pull request describing my changes and also mentiongn the issue I was hoping to close. Bellow you can see my activity in GitHub:
+I worked with GitHub in my forked repository. I tried to make small commits at a time in order to be specific in their description. Also GitHub helped me retrieve previous versions when that was needed. Finally when I finished my work I created a pull request describing my changes and also mentioning the corresponding issue I was hoping to close. Bellow you can see my activity in GitHub:
 % Image
 \begin{figure}[tph!]
 \centerline{\includegraphics[totalheight=2cm]{github.jpg}}
@@ -118,10 +118,10 @@ I worked with GitHub in my forked repository. I tried to make small commits at a
     \label{fig:verticalcell}
 \end{figure}
 %-----
-
+\newline
 \section{Cooperation with the team}
 
-From the first moment I had excellent cooperation with the project owner Nick Sweeting. He surely helped me and introduced me to the Web archiving community. Also, I was constantly asking for feedback and code review and he was always willing to do so. Further than that, we also had a video call to talk about the project and my next task. I am very satisfied with our cooperation as I learned lot of things according to project organization and python programming. 
+From the beginning, I had excellent cooperation with the project owner Nick Sweeting. He surely helped me and introduced me to web archiving community. Also, I was constantly asking for feedback and code review and he was always willing to do so. Further than that, we also had a video call to talk about the project and my next task. I am very satisfied with our cooperation as I learned lots of things according to project organization and python programming. 
 
 % Image
 \begin{figure}[tph!]
@@ -132,7 +132,7 @@ From the first moment I had excellent cooperation with the project owner Nick Sw
 %-----
 
 \section{Conclusion}
-My first contribution was an incredible journey as I broke out of my comfort zone and faced the real world of Software engineering. I realised many of my strengths and weaknesses as far as programming is concerned. I saw that I have very analytical thought when I deal with a problem and that helped me a lot. I also realised that in order to be good at software engineering I should be more involved with open source projects because the thing that made improve was Nick's feedback. Lastly, I gained useful knowledge and I am ready to work hard to improve my skills in programming!
+My first contribution was an incredible journey as I broke out of my comfort zone and faced the real world of software engineering. Being involved in an open source project you always face your strengths and weaknesses, as you are not dealing only with yourself but also with an experienced development team.  Through my contribution process, I realised that being analytical and thorough will help me be deal with programming challenges. For me, a good software engineer has to combine code quality and team work which are the two key elements of open source community. That's the reason why I am not going to stop being a part of it. Lastly, I gained useful knowledge and I am ready to work hard to improve my skills in programming!
 
 \section*{References}
 [1] https://github.com/pirate/ArchiveBox 
